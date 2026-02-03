@@ -88,20 +88,20 @@ const App: React.FC = () => {
                 <section id="services" className="py-40">
                     <div className="container">
                         <div className="text-center mb-24">
-                            <h2 className="text-5xl mb-4">WHAT I DO</h2>
-                            <p className="font-accent italic text-primary text-2xl">My Services</p>
+                            <h2 className="text-5xl mb-4">PROFESSIONAL HIGHLIGHTS</h2>
+                            <p className="font-accent italic text-primary text-2xl">My Leadership</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                             {[
-                                { cat: "WEB DEVELOPMENT", title: "Web Design & Logo", desc: "Web designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company, or Personal." },
-                                { cat: "APPS DEVELOPMENT", title: "iOS & Android", desc: "Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing." },
-                                { cat: "GAME DEVELOPMENT", title: "Unity & Unreal Engine", desc: "Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games." }
+                                { cat: "FOUNDER & CEO", title: "Strategic Leadership", desc: "Driving organizational vision, fostering a culture of innovation, and scaling impactful tech-driven startups from conception to operation." },
+                                { cat: "TECH STUDENT", title: "System Innovation", desc: "Leveraging full-stack development and systems analysis to build efficient, user-centric digital products and software solutions." },
+                                { cat: "CFO & ADVISOR", title: "Financial Strategy", desc: "Directing financial planning, budgeting, and resource optimization to ensure long-term sustainability and operational excellence." }
                             ].map((s, i) => (
                                 <div key={i} className="service-card group">
                                     <h4 className="text-[11px] font-black text-gray-400 mb-8 tracking-[0.2em]">{s.cat}</h4>
                                     <h3 className="text-2xl mb-8 leading-snug">{s.title}</h3>
                                     <p className="text-gray-500 mb-10 text-[15px] leading-relaxed">{s.desc}</p>
-                                    <a href="#" className="flex items-center gap-3 text-sm font-black uppercase transition-all group-hover:gap-6">See Pricing <span className="text-primary text-2xl">→</span></a>
+                                    <div className="flex items-center gap-3 text-sm font-black uppercase transition-all text-primary group-hover:gap-6 opacity-0 group-hover:opacity-100 transition-all duration-300">Expertise <span className="text-2xl">→</span></div>
                                     <div className="dot-pattern">
                                         {Array(15).fill(0).map((_, i) => <div key={i} className="dot"></div>)}
                                     </div>
