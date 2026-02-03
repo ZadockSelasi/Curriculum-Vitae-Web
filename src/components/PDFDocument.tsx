@@ -142,8 +142,7 @@ const PDFDocument = () => (
                     <Text style={styles.name}>Zadock Selasi</Text>
                     <Text style={styles.title}>Tech Student | Founder | CEO | CFO</Text>
                 </View>
-                {/* Image Placeholder or actual if available */}
-                <View style={{ width: 80, height: 80, backgroundColor: '#f0f0f0', borderRadius: 40 }} />
+                <Image src="c:/Users/ZADOCK/Desktop/CV WEB/public/assets/profile.png" style={styles.profileImage} />
             </View>
 
             <View style={styles.main}>

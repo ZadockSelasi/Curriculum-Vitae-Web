@@ -38,7 +38,7 @@ const App: React.FC = () => {
                             </div>
                             <div className="order-1 lg:order-2 relative flex justify-center items-center">
                                 <div className="hero-image-circle"></div>
-                                <img src="/assets/hero.png" alt="Ablekpe Zadock Selasi" className="w-full max-w-[550px] z-10 drop-shadow-2xl" />
+                                <img src="/assets/profile.png" alt="Ablekpe Zadock Selasi" className="w-full max-w-[550px] z-10 drop-shadow-2xl" />
                                 <div className="absolute bottom-[-10px] w-full flex justify-around gap-6 px-4 z-20">
                                     <div className="bg-white p-8 rounded-[2rem] shadow-2xl flex items-center gap-5 transform hover:scale-105 transition-transform">
                                         <span className="text-4xl font-black">2<span className="text-primary">+</span></span>
