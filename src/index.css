@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #2abb9b;
+    --primary-rgb: 42, 187, 155;
+    --secondary: #222222;
+    --bg-color: #f8f6f1;
+    --white: #ffffff;
+    --text-main: #222222;
+    --text-muted: #666666;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-accent: 'Playfair Display', serif;
+}
+
+@layer base {
+    body {
+        @apply bg-[#f8f6f1] text-[#222222] font-body overflow-x-hidden m-0 p-0;
+        line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-heading uppercase font-extrabold tracking-tighter;
+    }
+}
+
+.container {
+    @apply max-w-[1200px] mx-auto px-6;
+}
+
+/* Typography Strokes */
+.outline-text {
+    -webkit-text-stroke: 2px #222222;
+    color: transparent;
+}
+
+/* Original Design Elements */
+.hero-image-circle {
+    @apply bg-primary rounded-full absolute -z-10;
+    width: min(80vw, 500px);
+    aspect-ratio: 1/1;
+}
+
+.service-card {
+    @apply bg-white p-12 rounded-[2rem] shadow-sm transition-all duration-300 relative overflow-hidden;
+}
+
+.service-card:hover {
+    @apply shadow-2xl -translate-y-2;
+}
+
+.dot-pattern {
+    @apply absolute bottom-8 right-8 grid grid-cols-5 gap-2 opacity-10;
+}
+
+.dot {
+    @apply w-1.5 h-1.5 bg-secondary rounded-full;
+}
+
+.resume-line {
+    @apply relative pl-8 border-l border-gray-200;
+}
+
+.resume-item {
+    @apply mb-16 relative cursor-default;
+}
+
+.resume-marker {
+    @apply absolute left-[-41px] top-1 w-2.5 h-16 border-l-4 border-primary opacity-0 transition-opacity duration-300;
+}
+
+.resume-item:hover .resume-marker {
+    @apply opacity-100;
+}
+
+/* Floating Nav Premium Fix */
+.nav-indicator {
+    @apply absolute top-1 bottom-1 rounded-full bg-primary/10 border border-primary/5;
+}
+
+/* Section Transitions */
+section {
+    @apply relative;
+}
