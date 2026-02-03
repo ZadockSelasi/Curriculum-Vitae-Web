@@ -9,7 +9,7 @@ const App: React.FC = () => {
             <header className="fixed top-0 w-full py-10 z-40">
                 <div className="container flex justify-between items-center">
                     <div className="text-2xl font-black text-secondary uppercase tracking-tighter">
-                        LUIQUE<span className="text-primary">.</span>
+                        ZADOCK<span className="text-primary">.</span>
                     </div>
                 </div>
             </header>
