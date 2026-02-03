@@ -17,21 +17,21 @@ const App: React.FC = () => {
 
             <main>
                 {/* --- Hero Section --- */}
-                <section id="hero" className="min-h-screen flex items-center pt-28 pb-10">
+                <section id="hero" className="min-h-screen flex items-center pt-32 pb-10 md:pt-28">
                     <div className="container">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                            <div className="order-2 lg:order-1 hero-content">
-                                <h4 className="text-sm font-bold text-gray-400 mb-4 tracking-[0.3em]">HELLO, <span className="text-primary uppercase">MY NAME IS</span></h4>
-                                <h1 className="text-6xl md:text-[110px] leading-[0.85] mb-8 text-secondary">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                            <div className="order-2 lg:order-1 hero-content text-center lg:text-left">
+                                <h4 className="text-xs md:text-sm font-bold text-gray-400 mb-4 tracking-[0.3em]">HELLO, <span className="text-primary uppercase">MY NAME IS</span></h4>
+                                <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[110px] leading-[0.9] lg:leading-[0.85] mb-8 text-secondary font-black">
                                     ABLEKPE<br />
                                     <span className="outline-text">ZADOCK</span><br />
                                     SELASI
                                 </h1>
-                                <p className="text-2xl italic font-accent mb-8 text-secondary/80">I AM Tech Student | Founder | CEO | CFO</p>
+                                <p className="text-xl md:text-2xl italic font-accent mb-8 text-secondary/80">I AM Tech Student | Founder | CEO | CFO</p>
                                 <p className="text-lg text-gray-500 max-w-lg mb-12 leading-relaxed">
                                     Disciplined and highly motivated tech student with a passion for building impactful solutions through technology, design, and business leadership.
                                 </p>
-                                <div className="flex items-center gap-10">
+                                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 md:gap-10">
                                     <DownloadPDF />
                                     <a href="#services" className="text-sm font-bold uppercase tracking-[0.2em] hover:text-primary transition-colors relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-primary hover:after:w-full after:transition-all">My Skills</a>
                                 </div>
@@ -39,14 +39,14 @@ const App: React.FC = () => {
                             <div className="order-1 lg:order-2 relative flex justify-center items-center">
                                 <div className="hero-image-circle"></div>
                                 <img src="/assets/profile.png" alt="Ablekpe Zadock Selasi" className="w-full max-w-[550px] z-10 drop-shadow-2xl" />
-                                <div className="absolute bottom-[-10px] w-full flex justify-around gap-6 px-4 z-20">
-                                    <div className="bg-white p-8 rounded-[2rem] shadow-2xl flex items-center gap-5 transform hover:scale-105 transition-transform">
-                                        <span className="text-4xl font-black">2<span className="text-primary">+</span></span>
-                                        <span className="text-[11px] uppercase font-bold text-gray-400 leading-tight">Years of<br />Experience</span>
+                                <div className="absolute -bottom-6 md:bottom-[-10px] w-full flex justify-center md:justify-around gap-4 md:gap-6 px-4 z-20">
+                                    <div className="bg-white p-5 md:p-8 rounded-[1.5rem] md:rounded-[2rem] shadow-2xl flex items-center gap-3 md:gap-5 transform hover:scale-105 transition-transform">
+                                        <span className="text-2xl md:text-4xl font-black">2<span className="text-primary">+</span></span>
+                                        <span className="text-[9px] md:text-[11px] uppercase font-bold text-gray-400 leading-tight">Years of<br />Experience</span>
                                     </div>
-                                    <div className="bg-white p-8 rounded-[2rem] shadow-2xl flex items-center gap-5 transform hover:scale-105 transition-transform">
-                                        <span className="text-4xl font-black">10<span className="text-primary">+</span></span>
-                                        <span className="text-[11px] uppercase font-bold text-gray-400 leading-tight">Completed<br />Projects</span>
+                                    <div className="bg-white p-5 md:p-8 rounded-[1.5rem] md:rounded-[2rem] shadow-2xl flex items-center gap-3 md:gap-5 transform hover:scale-105 transition-transform">
+                                        <span className="text-2xl md:text-4xl font-black">10<span className="text-primary">+</span></span>
+                                        <span className="text-[9px] md:text-[11px] uppercase font-bold text-gray-400 leading-tight">Completed<br />Projects</span>
                                     </div>
                                 </div>
                             </div>
@@ -55,12 +55,12 @@ const App: React.FC = () => {
                 </section>
 
                 {/* --- About Section --- */}
-                <section id="about" className="py-40 border-b border-gray-200">
+                <section id="about" className="py-24 md:py-40 border-b border-gray-200">
                     <div className="container">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 text-center md:text-left">
                             <div>
-                                <h2 className="text-5xl mb-12">ABOUT ME</h2>
-                                <p className="text-xl text-gray-500 leading-loose">
+                                <h2 className="text-4xl md:text-5xl mb-8 md:mb-12">ABOUT ME</h2>
+                                <p className="text-lg md:text-xl text-gray-500 leading-relaxed md:leading-loose">
                                     I am a disciplined and highly motivated tech student with a strong passion for building impactful solutions and contributing to societal development. I combine technical knowledge, design thinking, and business leadership to create value-driven projects.
                                 </p>
                             </div>
@@ -85,11 +85,11 @@ const App: React.FC = () => {
                 </section>
 
                 {/* --- Services Section --- */}
-                <section id="services" className="py-40">
+                <section id="services" className="py-24 md:py-40">
                     <div className="container">
-                        <div className="text-center mb-24">
-                            <h2 className="text-5xl mb-4">PROFESSIONAL HIGHLIGHTS</h2>
-                            <p className="font-accent italic text-primary text-2xl">My Leadership</p>
+                        <div className="text-center mb-16 md:mb-24">
+                            <h2 className="text-4xl md:text-5xl mb-4">PROFESSIONAL HIGHLIGHTS</h2>
+                            <p className="font-accent italic text-primary text-xl md:text-2xl">My Leadership</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                             {[
@@ -112,11 +112,11 @@ const App: React.FC = () => {
                 </section>
 
                 {/* --- Skills Section --- */}
-                <section id="skills" className="py-40 bg-secondary text-white rounded-[6rem] mx-6">
+                <section id="skills" className="py-24 md:py-40 bg-secondary text-white rounded-[3rem] md:rounded-[6rem] mx-4 md:mx-6">
                     <div className="container">
-                        <div className="text-center mb-24">
-                            <h2 className="text-5xl mb-4 text-white">PROFESSIONAL SKILLS</h2>
-                            <p className="font-accent italic text-primary text-2xl">My Talent</p>
+                        <div className="text-center mb-16 md:mb-24">
+                            <h2 className="text-4xl md:text-5xl mb-4 text-white">PROFESSIONAL SKILLS</h2>
+                            <p className="font-accent italic text-primary text-xl md:text-2xl">My Talent</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
                             {[
@@ -142,11 +142,11 @@ const App: React.FC = () => {
                 </section>
 
                 {/* --- Experience Section --- */}
-                <section id="experience" className="py-40">
+                <section id="experience" className="py-24 md:py-40">
                     <div className="container">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-32">
                             <div>
-                                <h2 className="text-4xl mb-20 flex items-center gap-6">EXPERIENCE</h2>
+                                <h2 className="text-3xl md:text-4xl mb-12 md:20 flex items-center gap-6">EXPERIENCE</h2>
                                 <div className="resume-line">
                                     {[
                                         { date: "2024 - Present", title: "Founder / CEO", company: "EcclesiaBranx", points: ["Founded and lead the organization", "Define vision, strategy, and growth direction", "Oversee operations and team collaboration", "Lead branding, client engagement, and business development"] },
@@ -164,8 +164,8 @@ const App: React.FC = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div>
-                                <h2 className="text-4xl mb-20 flex items-center gap-6">EDUCATION</h2>
+                            <div className="mt-20 lg:mt-0">
+                                <h2 className="text-3xl md:text-4xl mb-12 md:20 flex items-center gap-6">EDUCATION</h2>
                                 <div className="resume-line">
                                     <div className="resume-item group">
                                         <div className="resume-marker"></div>
@@ -185,11 +185,11 @@ const App: React.FC = () => {
                 </section>
 
                 {/* --- Projects Section --- */}
-                <section id="projects" className="py-40 bg-gray-50/50">
+                <section id="projects" className="py-24 md:py-40 bg-gray-50/50">
                     <div className="container">
-                        <div className="text-center mb-24">
-                            <h2 className="text-5xl mb-4 text-secondary">PROJECTS</h2>
-                            <p className="font-accent italic text-primary text-2xl">My Work</p>
+                        <div className="text-center mb-16 md:mb-24">
+                            <h2 className="text-4xl md:text-5xl mb-4 text-secondary">PROJECTS</h2>
+                            <p className="font-accent italic text-primary text-xl md:text-2xl">My Work</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                             {[
@@ -197,11 +197,11 @@ const App: React.FC = () => {
                                 { cat: "COLLABORATIVE", title: "Ecclesia Brand Ecosystem", img: "Web Dev", tools: "Javascript, React, Branding Strategies" }
                             ].map((p, i) => (
                                 <div key={i} className="group bg-white rounded-[3rem] overflow-hidden shadow-2xl transition-all duration-700 hover:-translate-y-4">
-                                    <div className="h-[400px] bg-gray-100 flex items-center justify-center text-gray-200 text-6xl font-black transition-transform duration-700 group-hover:scale-110 uppercase relative overflow-hidden">
+                                    <div className="h-[300px] md:h-[400px] bg-gray-100 flex items-center justify-center text-gray-200 text-4xl md:text-6xl font-black transition-transform duration-700 group-hover:scale-110 uppercase relative overflow-hidden">
                                         {p.img}
                                         <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                     </div>
-                                    <div className="p-14">
+                                    <div className="p-8 md:p-14">
                                         <h4 className="text-[11px] font-black text-primary mb-3 tracking-[0.4em]">{p.cat}</h4>
                                         <h3 className="text-3xl mb-6 leading-tight font-black">{p.title}</h3>
                                         <div className="h-1 w-20 bg-primary/10 mb-6 group-hover:w-full transition-all duration-700"></div>
@@ -214,11 +214,11 @@ const App: React.FC = () => {
                 </section>
 
                 {/* --- Contact Section --- */}
-                <section id="contact" className="py-40 bg-secondary text-white rounded-t-[6rem] relative overflow-hidden">
+                <section id="contact" className="py-24 md:py-40 bg-secondary text-white rounded-t-[3rem] md:rounded-t-[6rem] relative overflow-hidden">
                     <div className="container relative z-10">
-                        <div className="text-center mb-28">
-                            <h2 className="text-6xl mb-4 text-white">GET IN TOUCH</h2>
-                            <p className="font-accent italic text-primary text-2xl">Contact Me</p>
+                        <div className="text-center mb-16 md:mb-28">
+                            <h2 className="text-4xl md:text-6xl mb-4 text-white">GET IN TOUCH</h2>
+                            <p className="font-accent italic text-primary text-xl md:text-2xl">Contact Me</p>
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
                             <div className="space-y-12">
@@ -227,25 +227,25 @@ const App: React.FC = () => {
                                     { icon: "📧", label: "Email", val: "zadockselasi7@gmail.com" },
                                     { icon: "📞", label: "Call Me", val: "0532 539 051" }
                                 ].map((c, i) => (
-                                    <div key={i} className="flex items-center gap-10 group">
-                                        <div className="w-20 h-20 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-3xl text-primary transition-all group-hover:bg-primary group-hover:text-white group-hover:scale-110">{c.icon}</div>
+                                    <div key={i} className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 group text-center md:text-left">
+                                        <div className="w-16 h-16 md:w-20 md:h-20 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-2xl md:text-3xl text-primary transition-all group-hover:bg-primary group-hover:text-white group-hover:scale-110">{c.icon}</div>
                                         <div>
-                                            <h4 className="text-xs font-black uppercase text-gray-500 mb-2 tracking-widest">{c.label}</h4>
-                                            <p className="text-3xl font-regular">{c.val}</p>
+                                            <h4 className="text-[10px] md:text-xs font-black uppercase text-gray-500 mb-2 tracking-widest">{c.label}</h4>
+                                            <p className="text-xl md:text-3xl font-regular">{c.val}</p>
                                         </div>
                                     </div>
                                 ))}
                             </div>
-                            <div className="bg-white p-16 rounded-[4rem] text-secondary shadow-2xl transform rotate-1">
-                                <h3 className="text-3xl font-black mb-10">Reference</h3>
-                                <p className="text-gray-500 italic mb-12 leading-loose text-xl">"Reference available upon request"</p>
-                                <div className="flex items-center gap-8">
-                                    <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center">
-                                        <User className="text-primary" size={40} />
+                            <div className="bg-white p-10 md:p-16 rounded-[3rem] md:rounded-[4rem] text-secondary shadow-2xl transform md:rotate-1">
+                                <h3 className="text-2xl md:text-3xl font-black mb-10">Reference</h3>
+                                <p className="text-gray-500 italic mb-12 leading-loose text-lg md:text-xl text-center md:text-left">"Reference available upon request"</p>
+                                <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 text-center md:text-left">
+                                    <div className="w-16 h-16 md:w-20 md:h-20 bg-primary/10 rounded-full flex items-center justify-center">
+                                        <User className="text-primary" size={32} />
                                     </div>
                                     <div>
-                                        <h4 className="text-2xl font-black mb-1">Haadi Mustapha</h4>
-                                        <p className="text-base text-primary font-black uppercase tracking-widest">CEO – Restart Digital</p>
+                                        <h4 className="text-xl md:text-2xl font-black mb-1">Haadi Mustapha</h4>
+                                        <p className="text-sm md:text-base text-primary font-black uppercase tracking-widest">CEO – Restart Digital</p>
                                     </div>
                                 </div>
                             </div>
