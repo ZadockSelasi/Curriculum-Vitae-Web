@@ -1,6 +1,7 @@
 import React from 'react';
 import FloatingNav from './components/ui/floating-nav';
 import { User } from 'lucide-react';
+import DownloadPDF from './components/DownloadPDF';
 
 const App: React.FC = () => {
     return (
@@ -31,7 +32,7 @@ const App: React.FC = () => {
                                     Disciplined and highly motivated tech student with a passion for building impactful solutions through technology, design, and business leadership.
                                 </p>
                                 <div className="flex items-center gap-10">
-                                    <a href="#" className="px-10 py-5 border-2 border-secondary rounded-full font-bold uppercase transition-all hover:bg-secondary hover:text-white text-sm tracking-widest">Download CV</a>
+                                    <DownloadPDF />
                                     <a href="#services" className="text-sm font-bold uppercase tracking-[0.2em] hover:text-primary transition-colors relative after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-primary hover:after:w-full after:transition-all">My Skills</a>
                                 </div>
                             </div>
