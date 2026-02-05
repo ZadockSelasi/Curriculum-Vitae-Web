@@ -194,21 +194,34 @@ const App: React.FC = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                             {[
                                 { cat: "UI/UX & FRONTEND", title: "Web Solutions for Small Businesses", img: "Digital Branding", tools: "HTML, CSS, Design Tools, UI/UX Principles" },
-                                { cat: "COLLABORATIVE", title: "Ecclesia Brand Ecosystem", img: "Web Dev", tools: "Javascript, React, Branding Strategies" }
-                            ].map((p, i) => (
-                                <div key={i} className="group bg-white rounded-[3rem] overflow-hidden shadow-2xl transition-all duration-700 hover:-translate-y-4">
-                                    <div className="h-[300px] md:h-[400px] bg-gray-100 flex items-center justify-center text-gray-200 text-4xl md:text-6xl font-black transition-transform duration-700 group-hover:scale-110 uppercase relative overflow-hidden">
-                                        {p.img}
-                                        <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                { cat: "COLLABORATIVE", title: "Ecclesia Brand Ecosystem", img: "Web Dev", tools: "Javascript, React, Branding Strategies" },
+                                { cat: "WEB DEPLOYMENT", title: "EcclesiaBranx", img: "Live App", tools: "Next.js, TailwindCSS, Vercel", link: "https://ecclesiabranx-cxej.vercel.app/" }
+                            ].map((p, i) => {
+                                const CardContent = (
+                                    <>
+                                        <div className="h-[300px] md:h-[400px] bg-gray-100 flex items-center justify-center text-gray-200 text-4xl md:text-6xl font-black transition-transform duration-700 group-hover:scale-110 uppercase relative overflow-hidden">
+                                            {p.img}
+                                            <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        </div>
+                                        <div className="p-8 md:p-14">
+                                            <h4 className="text-[11px] font-black text-primary mb-3 tracking-[0.4em]">{p.cat}</h4>
+                                            <h3 className="text-3xl mb-6 leading-tight font-black">{p.title}</h3>
+                                            <div className="h-1 w-20 bg-primary/10 mb-6 group-hover:w-full transition-all duration-700"></div>
+                                            <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Tools: {p.tools}</p>
+                                        </div>
+                                    </>
+                                );
+
+                                return p.link ? (
+                                    <a key={i} href={p.link} target="_blank" rel="noopener noreferrer" className="group bg-white rounded-[3rem] overflow-hidden shadow-2xl transition-all duration-700 hover:-translate-y-4 block">
+                                        {CardContent}
+                                    </a>
+                                ) : (
+                                    <div key={i} className="group bg-white rounded-[3rem] overflow-hidden shadow-2xl transition-all duration-700 hover:-translate-y-4">
+                                        {CardContent}
                                     </div>
-                                    <div className="p-8 md:p-14">
-                                        <h4 className="text-[11px] font-black text-primary mb-3 tracking-[0.4em]">{p.cat}</h4>
-                                        <h3 className="text-3xl mb-6 leading-tight font-black">{p.title}</h3>
-                                        <div className="h-1 w-20 bg-primary/10 mb-6 group-hover:w-full transition-all duration-700"></div>
-                                        <p className="text-xs text-gray-400 font-bold uppercase tracking-widest">Tools: {p.tools}</p>
-                                    </div>
-                                </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                 </section>
