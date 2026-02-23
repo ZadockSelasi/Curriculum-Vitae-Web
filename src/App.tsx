@@ -193,7 +193,8 @@ const App: React.FC = () => {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                             {[
-                                { cat: "WEB DEPLOYMENT", title: "EcclesiaBranx", img: "Live App", tools: "Next.js, TailwindCSS, Vercel", link: "https://ecclesiabranx-cxej.vercel.app/" }
+                                { cat: "WEB DEPLOYMENT", title: "EcclesiaBranx", img: "Live App", tools: "Next.js, TailwindCSS, Vercel", link: "https://ecclesiabranx-cxej.vercel.app/" },
+                                { cat: "WEB DEPLOYMENT", title: "Capital bearcub club", img: "Live App", tools: "Next.js, TailwindCSS, Vercel", link: "https://capital-bearcub-club.vercel.app/" }
                             ].map((p, i) => {
                                 const CardContent = (
                                     <>
