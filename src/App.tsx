@@ -172,7 +172,7 @@ const App: React.FC = () => {
                                         <span className="font-accent italic text-primary text-base mb-3 block">2024 - 2027</span>
                                         <h3 className="text-3xl font-black mb-2">Computer Technology</h3>
                                         <span className="text-xs font-black text-gray-400 uppercase tracking-[0.3em] mb-6 block">Kumasi Technical University</span>
-                                        <p className="text-[17px] text-gray-500 mb-6 leading-relaxed">High academic performance with a CGPA of <strong className="text-secondary font-black">3.9 / 4.0</strong></p>
+                                        <p className="text-[17px] text-gray-500 mb-6 leading-relaxed">High academic performance with a CGPA of <strong className="text-secondary font-black">3.9 / 5.0</strong></p>
                                         <ul className="space-y-4">
                                             <li className="text-[15px] text-gray-500 pl-6 relative before:absolute before:left-0 before:text-primary before:content-['•']"> Active leadership roles alongside academic studies</li>
                                             <li className="text-[15px] text-gray-500 pl-6 relative before:absolute before:left-0 before:text-primary before:content-['•']"> Specialized in Systems Analysis and Software Logic</li>

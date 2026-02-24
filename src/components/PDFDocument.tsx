@@ -161,7 +161,7 @@ const PDFDocument = () => (
                             <Text style={styles.expTitle}>Computer Technology</Text>
                             <Text style={styles.expCompany}>Kumasi Technical University</Text>
                             <Text style={styles.expDate}>2024 - 2027</Text>
-                            <Text style={styles.content}>CGPA: 3.9 / 4.0</Text>
+                            <Text style={styles.content}>CGPA: 3.9 / 5.0</Text>
                         </View>
                     </View>
 
@@ -226,6 +226,28 @@ const PDFDocument = () => (
                                 <Text style={styles.bullet}>•</Text>
                                 <Text style={styles.content}>Provide financial insights for decision-making and operational planning.</Text>
                             </View>
+                        </View>
+                    </View>
+
+                    <View style={styles.section}>
+                        <Text style={styles.sectionTitle}>Projects</Text>
+
+                        <View style={styles.experienceItem}>
+                            <View style={styles.expHeader}>
+                                <Text style={styles.expTitle}>EcclesiaBranx</Text>
+                                <Text style={styles.expDate}>Web Deployment</Text>
+                            </View>
+                            <Text style={styles.expCompany}>Next.js, TailwindCSS, Vercel</Text>
+                            <Text style={styles.content}>https://ecclesiabranx-cxej.vercel.app/</Text>
+                        </View>
+
+                        <View style={styles.experienceItem}>
+                            <View style={styles.expHeader}>
+                                <Text style={styles.expTitle}>Capital Bearcub Club</Text>
+                                <Text style={styles.expDate}>Web Deployment</Text>
+                            </View>
+                            <Text style={styles.expCompany}>Next.js, TailwindCSS, Vercel</Text>
+                            <Text style={styles.content}>https://capital-bearcub-club.vercel.app/</Text>
                         </View>
                     </View>
 
