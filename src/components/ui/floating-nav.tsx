@@ -62,7 +62,7 @@ const FloatingNav = () => {
         <div className="fixed bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-[100] w-full md:w-fit px-4">
             <div
                 ref={containerRef}
-                className="relative flex items-center justify-between md:justify-center bg-white/70 backdrop-blur-xl shadow-2xl rounded-full p-1.5 md:p-2 border border-white/40 max-w-lg mx-auto"
+                className="relative flex items-center justify-between md:justify-center bg-white/70 backdrop-blur-xl shadow-2xl rounded-full p-1.5 md:p-2 border border-white/40 w-full"
             >
                 <AnimatePresence>
                     <motion.div
